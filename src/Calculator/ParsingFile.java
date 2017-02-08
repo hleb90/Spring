@@ -27,6 +27,7 @@ public class ParsingFile {
             while (scanner.hasNext()){
                 list.add(scanner.next());
             }
+            calculator.calculate(list);
         }catch (FileNotFoundException e){
             System.out.println("File not found!");
         }
