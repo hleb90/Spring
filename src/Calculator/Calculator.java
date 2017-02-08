@@ -7,10 +7,10 @@ import java.util.List;
  */
 public interface Calculator {
 
-    void sum();
-    void sub();
-    void mul();
-    void div();
+    double sum(double a, double b);
+    double sub(double a, double b);
+    double mul(double a, double b);
+    double div(double a, double b);
 
     void calculate(List<String> list);
 

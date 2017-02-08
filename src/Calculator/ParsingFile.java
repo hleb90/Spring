@@ -2,7 +2,7 @@ package Calculator;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -23,7 +23,7 @@ public class ParsingFile {
             Scanner scanner = new Scanner(file);
             type = scanner.next();
             Calculator calculator = CalculatorFactory.createCalculatorByType(type);
-            List<String> list = new LinkedList<>();
+            List<String> list = new ArrayList<>();
             while (scanner.hasNext()){
                 list.add(scanner.next());
             }
